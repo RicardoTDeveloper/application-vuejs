@@ -1,0 +1,27 @@
+{
+  "name": "propz-avaliacao",
+  "version": "1.0.0",
+  "description": "Propz avaliação front-end",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoTDeveloper/propz-avaliacao.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicardoTDeveloper/propz-avaliacao/issues"
+  },
+  "homepage": "https://github.com/RicardoTDeveloper/propz-avaliacao#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
