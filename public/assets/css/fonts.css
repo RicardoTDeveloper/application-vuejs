@@ -1,0 +1,15 @@
+@font-face {
+  font-family: BarlowSemiCondensed;
+  src: url(../font/Titulo/BarlowSemiCondensed-SemiBold.ttf); }
+
+@font-face {
+  font-family: NFLBenga;
+  src: url(../font/Texto/Roboto-BoldCondensed.TTF); }
+
+@font-face {
+  font-family: Robot-Medium;
+  src: url(../font/Texto/Roboto-Medium.TTF); }
+
+@font-face {
+  font-family: Robot-Light;
+  src: url(../font/Texto/Roboto-Light.ttf); }

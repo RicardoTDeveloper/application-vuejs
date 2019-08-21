@@ -1,0 +1,90 @@
+@font-face {
+  font-family: BarlowSemiCondensed;
+  src: url(../font/Titulo/BarlowSemiCondensed-SemiBold.ttf); }
+
+@font-face {
+  font-family: NFLBenga;
+  src: url(../font/Texto/Roboto-BoldCondensed.TTF); }
+
+@font-face {
+  font-family: Robot-Medium;
+  src: url(../font/Texto/Roboto-Medium.TTF); }
+
+@font-face {
+  font-family: Robot-Light;
+  src: url(../font/Texto/Roboto-Light.ttf); }
+
+.slideshow-container {
+  margin-top: -130px;
+  position: relative; }
+  .slideshow-container a.prev, .slideshow-container a.next {
+    position: absolute;
+    left: 10%;
+    top: 180px;
+    color: white; }
+    .slideshow-container a.prev:after, .slideshow-container a.next:after {
+      content: "";
+      display: block;
+      border-right: 30px solid #CE6933;
+      border-top: 22px solid transparent;
+      border-bottom: 22px solid transparent;
+      position: absolute;
+      top: -8px; }
+  .slideshow-container a.next {
+    right: 10%;
+    left: auto; }
+    .slideshow-container a.next:after {
+      border-left: 30px solid #CE6933;
+      border-right: 0px solid transparent; }
+
+a.produto {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  text-decoration: inherit; }
+  @media all and (max-width: 360px) {
+    a.produto {
+      width: 80%; } }
+  a.produto * {
+    color: black; }
+  a.produto figure {
+    border-bottom: 2px solid;
+    margin: 0px;
+    padding-bottom: 10px; }
+    a.produto figure img {
+      max-width: 100%; }
+    a.produto figure figcaption {
+      font-family: NFLBenga, sans-serif;
+      text-decoration: none; }
+  a.produto .valor-1, a.produto .valor-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Robot-Medium, sans-serif; }
+    a.produto .valor-1 p, a.produto .valor-2 p {
+      font-size: 30px;
+      margin: 12px 0px; }
+      a.produto .valor-1 p sup, a.produto .valor-2 p sup {
+        font-size: 15px; }
+      a.produto .valor-1 p span[block], a.produto .valor-2 p span[block] {
+        display: block;
+        font-size: 12px;
+        letter-spacing: 0px;
+        font-weight: 300;
+        opacity: 0.8; }
+        a.produto .valor-1 p span[block] sup, a.produto .valor-2 p span[block] sup {
+          font-size: 7px;
+          margin-left: -2px; }
+  a.produto .valor-2 {
+    justify-content: flex-start; }
+    a.produto .valor-2 p {
+      margin: 0px 0px; }
+    a.produto .valor-2 sup[avista] {
+      align-self: flex-start;
+      padding-left: 20px;
+      font-family: NFLBenga, sans-serif;
+      opacity: 0.9;
+      letter-spacing: -0.5px; }
