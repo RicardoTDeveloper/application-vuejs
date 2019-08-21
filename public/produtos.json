@@ -5,19 +5,28 @@
         {
             "url" : "https://www.americanas.com.br/produto/35823239/chapinha-prancha-alisadora-eleganza-plus-gama-app2205-preta-bivolt?pfm_carac=Prancha-de-Cabelo-GAMA-ITALY-Eleganza-Plus-Bivolt&pfm_index=2&pfm_page=search&pfm_pos=grid&pfm_type=search_page%20&sellerId=23160025000158&sellerid",
             "description" : "Prancha Alisadora Eleganza Plus Gama APP2205 Preta Bivolt",
-            "image" : "https://www.ricardodesenvolvedor.com/assets/test/Prancha-de-Cabelo-GAMA-ITALY-Eleganza-Plus-Bivolt.png"
+            "image" : "https://www.ricardodesenvolvedor.com/assets/test/Prancha-de-Cabelo-GAMA-ITALY-Eleganza-Plus-Bivolt.png",
+            "avista" : "69,90",
+            "semjuros" : "3",
+            "semjuros2" : "6"
         },
 
         {
             "url" : "https://www.americanas.com.br/produto/54972337/shampoo-kerastase-specifique-bain-divalent-250ml?pfm_carac=Shampoo%20Kerastase%20Specifique%20Bain%20Divalent%20&pfm_index=8&pfm_page=search&pfm_pos=grid&pfm_type=search_page%20&sellerId&sellerid",
             "description" : "Shampoo Kérastase Specifique Bain Divalent - 250ml",
-            "image" : "https://www.ricardodesenvolvedor.com/assets/test/kerastase-specifique-bain-divalent-hair-shampoo.png"
+            "image" : "https://www.ricardodesenvolvedor.com/assets/test/kerastase-specifique-bain-divalent-hair-shampoo.png",
+            "avista" : "127,28",
+            "semjuros" : "6",
+            "semjuros2" : "12"
         },
 
         {
             "url" : "https://www.americanas.com.br/produto/19761110/aura-nano-titanium-ga-ma-italy-secador-de-cabelo?pfm_carac=secador%20de%20cabelo%20gama%20aura%20titanium&pfm_index=12&pfm_page=search&pfm_pos=grid&pfm_type=search_page%20&sellerId&sellerid&voltagem=220v",
             "description" : "Secador de Cabelo Aura Nano Titanium Ga.Ma Italy",
-            "image" : "https://www.ricardodesenvolvedor.com/assets/test/secador-de-cabelos-gama-110v.png"
+            "image" : "https://www.ricardodesenvolvedor.com/assets/test/secador-de-cabelos-gama-110v.png",
+            "avista" : "282,90",
+            "semjuros" : "8",
+            "semjuros2" : "12"
         }
     ]
 
