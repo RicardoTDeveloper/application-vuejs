@@ -17,6 +17,8 @@
 .slideshow-container {
   margin-top: -130px;
   position: relative; }
+  .slideshow-container .mySlides {
+    position: relative; }
   .slideshow-container a.prev, .slideshow-container a.next {
     position: absolute;
     left: 10%;
