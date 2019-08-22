@@ -1,4 +1,3 @@
-
 @import "fonts";
 
 .slideshow-container{
@@ -14,6 +13,7 @@
       left: 10%;
       top: 180px;
       color: white;
+      cursor: pointer;
 
       &:after{
         content: "";

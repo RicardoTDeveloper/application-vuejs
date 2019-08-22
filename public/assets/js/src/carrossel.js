@@ -1,5 +1,5 @@
 
-/*-------- Alimentando Carrossel -------*/
+/*-------- Consumindo Json Carrossel -------*/
 
 $(function(){
 
