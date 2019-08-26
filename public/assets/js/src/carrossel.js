@@ -31,7 +31,7 @@ $(function(){
 
                   var centavo = res.split(".");
 
-                  return centavo[0];
+                  return centavo[1];
 
               }
 
