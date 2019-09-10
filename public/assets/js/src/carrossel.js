@@ -1,44 +1,42 @@
-
 /*-------- Consumindo Json Carrossel -------*/
 
-$(function(){
+$(function () {
 
-  $.getJSON("produtos.json", function(data, status) {
+    $.getJSON("produtos.json", function (data, status) {
 
-      if(status == "success"){
+        if (status == "success") {
 
-          const all = data.produtos;
+            const all = data.produtos;
 
-          for (let i = 0; i < all.length; i++) {
+            for (let i = 0; i < all.length; i++) {
 
-          function calc(count, centavos) {
-                  
-              if(centavos == false){
+                function calc(count, centavos) {
 
-                  let valor = all[i].avista.replace(',','.');
+                    if (centavos == false) {
 
-                  let res = (valor / count).toString();
+                        let valor = all[i].avista.replace(',', '.');
 
-                  let real = res.split(".");
+                        let res = (valor / count).toString();
 
-                  return real[0];
-                  
-              } else {
+                        let real = res.split(".");
 
-                  var valor = all[i].avista.replace(',','.');
+                        return real[0];
 
-                  var res = (valor / count).toFixed(2).toString();
+                    } else {
 
-                  var centavo = res.split(".");
+                        var valor = all[i].avista.replace(',', '.');
 
-                  return centavo[1];
+                        var res = (valor / count).toFixed(2).toString();
 
-              }
+                        var centavo = res.split(".");
 
+                        return centavo[1];
 
-              }
+                    }
 
-              var template = ` 
+                }
+
+                var template = ` 
 
               <div class="mySlides fade">
                
@@ -71,46 +69,50 @@ $(function(){
               
               `;
 
-              document.getElementById("produtos").insertAdjacentHTML("afterbegin", template);
-            
-          }
+                document.getElementById("produtos").insertAdjacentHTML("afterbegin", template);
 
-      } else {
+            }
 
-          alert('Houve algum problema no carregamento dos produtos.')
+        } else {
 
-      }
+            alert('Houve algum problema no carregamento dos produtos.')
 
-      plusSlides(1)
+        }
+        
+        plusSlides(1)
 
-  });
+    });
 
 });
 
 
 /*------- Intereção do Carrossel ------*/
 
- var slideIndex = 1;
- showSlides(slideIndex);
- 
- function plusSlides(n) {
-   showSlides(slideIndex += n);
- }
- 
- function currentSlide(n) {
-   showSlides(slideIndex = n);
- }
- 
- function showSlides(n) {
-   
-   var i;
-   var slides = document.getElementsByClassName("mySlides");
+var slideIndex = 1;
+showSlides(slideIndex);
 
-   if (n > slides.length) {slideIndex = 1}    
-   if (n < 1) {slideIndex = slides.length}
-   for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-   }
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+}
 
-   slides[slideIndex-1].style.display = "block";  
- }
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+}
