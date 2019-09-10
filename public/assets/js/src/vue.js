@@ -1,7 +1,7 @@
 Vue.component('componente', {
     template: ` 
     <div class="slideshow-container"> 
-    <div class="mySlides fade" v-for="(produto, index) in produtos" :key="index">
+    <div :[Slides1]="Slides1" ref="Teste" class="mySlides fade" v-for="(produto, index) in produtos" :key="index">
     <a target="_blank" :href="produto.url" class="produto">
 
         <figure>
@@ -38,6 +38,7 @@ Vue.component('componente', {
         return {
             produtos: [],
             slideIndex: 1,
+            Slides1: 'Slides1'
         }
     },
 
@@ -67,10 +68,10 @@ Vue.component('componente', {
             }
         },
 
-        showSlides(n) {
-
+        showSlides: function (n) {
+            
             var i;
-            var slides = document.getElementsByClassName("mySlides");
+            var slides = this.$el.querySelectorAll("[" + this.Slides1 + "]");
 
             if (n > slides.length) {
                 this.slideIndex = 1
@@ -119,15 +120,19 @@ Vue.component('componente', {
 
         setTimeout(() => {
             this.plusSlides(-1)
-        }, 100);
+        }, 250);
     },
 
     mounted() {
-       
+
     },
 
 })
 
 const vm = new Vue({
     el: '#app'
+})
+
+const vm2 = new Vue({
+    el: '#app2'
 })
