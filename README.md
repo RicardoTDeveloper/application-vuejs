@@ -1,2 +1,2 @@
-# propz-avaliacao
-Propz avaliação front-end
+# Application VueJS
+Utilizando VueJS para construção de uma landing page.
