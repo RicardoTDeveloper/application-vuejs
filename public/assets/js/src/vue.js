@@ -1,3 +1,5 @@
+// import axios from 'https://unpkg.com/axios/dist/axios.min.js'; // Tentar usar Webpack
+
 Vue.component('componente', {
     template: ` 
     <div class="slideshow-container"> 
@@ -69,7 +71,7 @@ Vue.component('componente', {
         },
 
         showSlides: function (n) {
-            
+
             var i;
             var slides = this.$el.querySelectorAll("[" + this.Slides1 + "]");
 
