@@ -100,7 +100,7 @@ Vue.component('componente', {
 
             var self = this;
 
-            axios.get('/produtos.json')
+            axios.get('/public/produtos.json')
                 .then(function (response) {
                     // handle success
                     self.produtos = response.data.produtos
